@@ -60,6 +60,7 @@
   text-decoration: none;
   color: #000;
   white-space: nowrap;
+  margin-bottom: 20px;
 }
 .btn--cool:hover {
   background-color: #d0fff1;
@@ -97,12 +98,16 @@ a:not(.btn--remix):visited {
 .divider {
   padding: 0 1rem;
 }
+.as {
+  color: #2800ff;
+}
 
 /*Page Structure*/
 body {
   font-family: HK Grotesk;
   background-color: var(--color-bg);
   margin: 1rem;
+  font-size: 1.05rem;
 }
 .wrapper {
   min-height: var(--wrapper-height);
