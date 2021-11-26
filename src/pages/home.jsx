@@ -4,9 +4,10 @@ import { Link } from "wouter";
 export default function Home() {
   return (
     <>
-      <h1>&lt;Text/&gt;</h1>
+      <h1>&lt;MetaSite/&gt;</h1>
       <p className="sub-text">
-        Why should you <strong>not</strong> do it and <br /> who the hell cares?
+        <strong>Why</strong> and <strong>How</strong> does this site exist &{" "}
+        <br /> who the hell cares anyway?
       </p>
       <div className="instructions">
         <h2>Change and Variation</h2>
