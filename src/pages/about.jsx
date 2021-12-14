@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Link } from "wouter";
+import Contents from "../components/contents";
 
 export default function About() {
   const text = "hello there";
@@ -24,21 +25,37 @@ export default function About() {
           stores pages somewhere in abstract land. A weird thing you can check
           out is my <Link href="/about">About</Link> page. If you want to see my
           internal workings, you can either: {/*use a pop up*/}
-          <a href="https://www.thoughtco.com/get-inspect-element-tool-for-browser-756549">
+          <a
+            className="as"
+            href="https://www.thoughtco.com/get-inspect-element-tool-for-browser-756549"
+          >
+            {" "}
             inspect element
           </a>
           , or see the source files that make me up on{" "}
           <a className="as" href="https://github.com/azengoose/Glitchtest">
+            {" "}
             GitHub
           </a>
           , a place where people put their code. I'm definitely not at all
           associated with that Github account btw
         </p>
-        <h2>Contents</h2>
-        <p>
-          - Computer Stuff - Learning - Projects - Fulfilment - Discomfort &
-          Failure - Existence - Social Worlds
-        </p>
+      </div>
+      <iframe
+        src="https://my.spline.design/noisedisplacecopy-3d477ebfafb2828c71ad9c5523cbdfee/"
+        frameborder="0"
+        width="100%"
+        height="100%"
+      ></iframe>
+      <iframe
+        src="https://my.spline.design/glasscirclescopy-8e624d68ede96a09025b2b2540715290/"
+        frameborder="0"
+        width="100%"
+        height="100%"
+      ></iframe>{" "}
+      <div>
+        {" "}
+        <Contents />{" "}
       </div>
     </>
   );

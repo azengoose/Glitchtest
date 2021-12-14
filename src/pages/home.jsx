@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Link } from "wouter";
+import Contents from "../components/contents";
 
 const alternatives = [
   "Why don't you click this button?",
@@ -41,14 +42,15 @@ export default function Home() {
           replacement. This sometimes results in things like variation.
         </p>
       </div>
+      <body onload="loadSound();">
+        <button onclick="playSound();" class="playSound">
+          Play Sound
+        </button>
+      </body>
+
       <div>
-        <h2>Contents</h2>
-        <p>
-          - Computer Stuff - Learning - Projects - Fulfilment -
-          <Link href="/f">Discomfort and Failure</Link> - Existence - Social
-          Worlds
-        </p>
-        <p>Later, these can be distributed into simple cards. </p>
+        {" "}
+        <Contents />{" "}
       </div>
     </>
   );

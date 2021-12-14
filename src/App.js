@@ -1,5 +1,4 @@
 import "./styles/styles.css";
-
 import PageRouter from "./components/router.jsx";
 import { Link } from "wouter";
 
@@ -12,6 +11,7 @@ export default function App() {
           <PageRouter />
         </div>
       </main>
+
       <footer className="footer">
         <div className="links">
           <Link href="/">Home</Link>

@@ -1,4 +1,5 @@
 import * as React from "react";
+import Contents from "../components/contents";
 
 export default function Failure() {
   const text = "Failure is life.";
@@ -13,9 +14,8 @@ export default function Failure() {
       <div>
         <h2>Discomfort and Failure</h2>
         <p>
-          Although it might be a little beyond the scope of what a website
-          should provide with, I feel comfortable with disclosing what I've
-          generally observed to be a taboo subject.
+          People tend to feel uncomfortable talking about such a topic. But
+          failure is ingrained in me.
         </p>
         <p>
           For one, failure, hiccups, valley in the alleys, greatly contribute to
@@ -47,6 +47,10 @@ export default function Failure() {
           do I have freedom?
         </p>
         <p>{text}</p>
+        <div>
+          {" "}
+          <Contents />{" "}
+        </div>
       </div>
     </>
   );

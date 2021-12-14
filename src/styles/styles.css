@@ -99,7 +99,7 @@ a:not(.btn--remix):visited {
   padding: 0 1rem;
 }
 .as {
-  color: #2800ff;
+  color: #000;
 }
 
 /*Page Structure*/
@@ -136,4 +136,16 @@ h1 {
   font-size: 25px;
   text-align: center;
   margin-top: -20px;
+}
+
+.box {
+  display: none;
+  width: 100%;
+}
+
+a:hover + .box,
+.box:hover {
+  display: block;
+  position: relative;
+  z-index: 100;
 }

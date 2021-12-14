@@ -1,16 +1,18 @@
 {
-  "name": "react",
+  "name": "Metasite",
   "version": "1.0.0",
-  "description": "React example starter project",
+  "description": "A website that is a website",
   "keywords": [
-    "react",
-    "starter"
+    "meta",
+    "website"
   ],
   "main": "src/index.js",
   "dependencies": {
+    "create.js": "0.0.16",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-scripts": "4.0.0",
+    "sound.js": "1.0.1",
     "wouter": "2.8.0-alpha.2"
   },
   "devDependencies": {
