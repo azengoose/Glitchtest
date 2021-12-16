@@ -1,6 +1,6 @@
 import * as React from "react";
-import { Link } from "wouter";
 import Contents from "../components/contents";
+import Browser from "../components/browser";
 
 const alternatives = [
   "Why don't you click this button?",
@@ -24,6 +24,7 @@ export default function Home() {
 
   return (
     <>
+      <Browser />
       <h1>&lt;MetaSite/&gt;</h1>
       <p className="sub-text">
         <strong>Why</strong> and <strong>How</strong> do I exist and who, or
@@ -48,10 +49,7 @@ export default function Home() {
         </button>
       </body>
 
-      <div>
-        {" "}
-        <Contents />{" "}
-      </div>
+      <Contents />
     </>
   );
 }
