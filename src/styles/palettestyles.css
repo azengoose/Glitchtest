@@ -1,0 +1,22 @@
+:root {
+  --light: #ffffff;
+  --dark: #000000;
+}
+
+.light-theme {
+  background-color: white;
+  color: black;
+  transition: 0.9s;
+}
+.light-theme button {
+  background-color: white;
+}
+
+.dark-theme {
+  background-color: black;
+  color: white;
+  transition: 0.3s;
+}
+.dark-theme button {
+  background-color: black;
+}

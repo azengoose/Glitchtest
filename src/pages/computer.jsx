@@ -1,11 +1,14 @@
 import * as React from "react";
 import Contents from "../components/contents";
+import Palette from "../components/palette";
 
 export default function Computer() {
   return (
     <>
       <h1>C</h1>
       <p className="sub-text">Computer Stuff</p>
+
+      <Palette />
 
       <div>
         <h2>Computer Stuff</h2>

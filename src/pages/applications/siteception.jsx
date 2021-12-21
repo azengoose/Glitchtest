@@ -18,9 +18,7 @@ export default function Siteception() {
       <p className="sub-text">Siteception</p>
       <p>
         Open a live preview of this site within this site with{" "}
-        <a href="#" onClick={handleToggle}>
-          Siteception initiate.
-        </a>
+        <button onClick={handleToggle}>Siteception initiate.</button>
       </p>
       <div className={frame}>
         <iframe
