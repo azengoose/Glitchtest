@@ -1,6 +1,7 @@
 import * as React from "react";
 import Contents from "../components/contents";
 import Browser from "../components/browser";
+import Randompage from "../components/randompage";
 
 const alternatives = [
   "Why don't you click this button?",
@@ -33,6 +34,9 @@ export default function Home() {
       <button className="btn--cool" onClick={handleAlternative}>
         {Alternatives}
       </button>
+
+      <Randompage />
+
       <div>
         <h2>Change and Variation</h2>
         <p>

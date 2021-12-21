@@ -8,10 +8,10 @@ export default function Timer() {
     setIsActive(!isActive);
   }
 
-  // function reset() {
-  //   setSeconds(0);
-  //   setIsActive(false);
-  // }
+  function reset() {
+    setSeconds(0);
+    setIsActive(false);
+  }
 
   useEffect(() => {
     let timer = null;
@@ -29,6 +29,9 @@ export default function Timer() {
     <div className="App">
       <h2>{seconds}</h2>
       <button onClick={toggle}>{isActive ? "Pause" : "Start"}</button>
+      <button className="button" onClick={reset}>
+        Reset
+      </button>
     </div>
   );
 }

@@ -1,8 +1,21 @@
 # MetaSite
 
-\*Has **absolutely zilch** affiliation with Meta
+\*Has **absolutely zilch** affiliation with Meta or the """""_Metaverse_"""""
 
 MetaSite is a site that tries to be meta. Not too meta though – just a little bit.
+
+_In progress_
+
+- Set a global timer
+  - Add speedrun functionality (snapshots times upon triggers)
+- Make a button and/or trigger that plays sound
+- Make a random page button
+- Save in localstorage palettes/themes
+
+_Big Interactions_
+
+- Sliding transition animation and layout of pages
+  - Corresponding minimap of site pages
 
 It discusses:
 
