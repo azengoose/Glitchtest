@@ -1,11 +1,14 @@
 import * as React from "react";
 import Contents from "../components/contents";
+import Timer from "../components/timer";
 
 export default function Social() {
   return (
     <>
       <h1>S</h1>
       <p className="sub-text">Social</p>
+
+      <Timer />
 
       <div>
         <h2>People Stuff</h2>
