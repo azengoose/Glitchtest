@@ -138,13 +138,24 @@ h1 {
   margin-top: -20px;
 }
 
-.box {
+.ihoverbox {
   display: none;
   width: 100%;
 }
 
-a:hover + .box,
-.box:hover {
+a:hover + .ihoverbox,
+.ihoverbox:hover {
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+
+.framebox-closed {
+  display: none;
+  width: 100%;
+}
+
+.framebox-open {
   display: block;
   position: relative;
   z-index: 100;
