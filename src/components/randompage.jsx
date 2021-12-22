@@ -24,7 +24,9 @@ export default function RandomPage() {
 
   return (
     <>
-      <button onClick={handleRandom}>Random Page</button>
+      <button className="btn--cool" onClick={handleRandom}>
+        Random Page
+      </button>
       <h2>Would you like to navigate to: {randpage} ?</h2>
 
       {/* <Link href="/c">Computer Stuff</Link> - {""}

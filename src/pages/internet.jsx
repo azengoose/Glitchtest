@@ -1,12 +1,15 @@
 import * as React from "react";
 import Contents from "../components/contents";
 import { Link } from "wouter";
+import Sound from "../components/sound";
 
 export default function Internet() {
   return (
     <>
       <h1>INT</h1>
       <p className="sub-text">Institute of Internet</p>
+
+      <Sound />
 
       <div>
         <h2>Internet Stuff</h2>
