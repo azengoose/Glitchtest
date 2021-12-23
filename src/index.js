@@ -10,3 +10,5 @@ ReactDOM.render(
   </StrictMode>,
   rootElement
 );
+
+//crazy cool inspiration https://nki.tv/#!/en/works/

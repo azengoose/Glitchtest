@@ -3,13 +3,28 @@ import Contents from "../components/contents";
 import Browser from "../components/browser";
 import Randompage from "../components/randompage";
 import ButtonChange from "../components/buttonchange";
+import { AnimatePresence, motion } from "framer-motion";
+
+//glitch intro for home https://codepen.io/team/nclud/pen/MwaGGE
 
 export default function Home() {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <Browser />
 
-      <h1>&lt;MetaSite/&gt;</h1>
+      <AnimatePresence>
+        <motion.h1
+          exit={{ opacity: 0, y: -50 }}
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+        >
+          &lt;MetaSite/&gt;
+        </motion.h1>
+      </AnimatePresence>
 
       <p className="sub-text">
         <strong>Why</strong> and <strong>How</strong> do I exist and who, or
@@ -32,6 +47,6 @@ export default function Home() {
       </div>
 
       <Contents />
-    </>
+    </motion.div>
   );
 }

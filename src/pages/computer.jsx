@@ -1,10 +1,15 @@
+import { motion, AnimatePresence } from "framer-motion";
 import * as React from "react";
 import Contents from "../components/contents";
 import Palette from "../components/palette";
 
 export default function Computer() {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <h1>C</h1>
       <p className="sub-text">Computer Stuff</p>
 
@@ -33,6 +38,6 @@ export default function Computer() {
       <div>
         <Contents />
       </div>
-    </>
+    </motion.div>
   );
 }

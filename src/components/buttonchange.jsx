@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function ButtonChange() {
   const alternatives = [
@@ -10,19 +11,31 @@ export default function ButtonChange() {
     "Stop this at once.",
     "You're a button-clicker. Congrats"
   ];
+
+  const [Alternatives, setAlternatives] = useState(alternatives[0]);
+
   function randomAlternative() {
     return alternatives[Math.floor(Math.random() * alternatives.length)];
   }
 
-  const [Alternatives, setAlternatives] = useState(alternatives[0]);
   const handleAlternative = () => {
     const newAlternative = randomAlternative();
     setAlternatives(newAlternative);
   };
 
   return (
-    <button className="btn--cool" onClick={handleAlternative}>
+    <motion.button
+      drag
+      dragConstraints={{
+        top: -1,
+        left: -1,
+        right: 1,
+        bottom: 1
+      }}
+      className="btn--cool"
+      onClick={handleAlternative}
+    >
       {Alternatives}
-    </button>
+    </motion.button>
   );
 }

@@ -8,8 +8,8 @@ _In progress_
 
 - Set a global timer
   - Add speedrun functionality (snapshots times upon triggers)
-- Make a button and/or trigger that plays sound
-- Make a random page button
+- Make a page load trigger that plays sound
+- Make random page button redirect the user
 - Save in localstorage palettes/themes
 
 _Big Interactions_
