@@ -3,32 +3,26 @@ import Contents from "../components/contents";
 import Browser from "../components/browser";
 import Randompage from "../components/randompage";
 import ButtonChange from "../components/buttonchange";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 //glitch intro for home https://codepen.io/team/nclud/pen/MwaGGE
 
 export default function Home() {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
+      key="home"
+      initial={{ opacity: 0, x: -1000 }}
+      transition={{ ease: "easeInOut", duration: 1 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: -1000 }}
     >
       <Browser />
 
-      <AnimatePresence>
-        <motion.h1
-          exit={{ opacity: 0, y: -50 }}
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-        >
-          &lt;MetaSite/&gt;
-        </motion.h1>
-      </AnimatePresence>
+      <h1> &lt;MetaSite/&gt;</h1>
 
       <p className="sub-text">
-        <strong>Why</strong> and <strong>How</strong> do I exist and who, or
-        rather, what, the hell cares anyway?
+        So my problem right now is implementing router with AnimatePresence. /
+        Getting exit transitions to work.
       </p>
 
       <Randompage />

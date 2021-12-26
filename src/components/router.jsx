@@ -1,5 +1,6 @@
-import * as React from "react";
-import { Switch, Route } from "wouter";
+import React from "react";
+import { Switch, Route, useLocation } from "wouter";
+
 import Home from "../pages/home";
 import About from "../pages/about";
 import Failure from "../pages/failure";
@@ -7,6 +8,7 @@ import Computer from "../pages/computer";
 import Internet from "../pages/internet";
 import Social from "../pages/social";
 import Siteception from "../pages/applications/siteception";
+
 import { AnimatePresence } from "framer-motion";
 
 /**
@@ -17,7 +19,7 @@ import { AnimatePresence } from "framer-motion";
  */
 
 export default () => (
-  <AnimatePresence>
+  <AnimatePresence exitBeforeEnter>
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/about" component={About} />
