@@ -27,9 +27,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-
-
-
 ******************************************************************************
 
 THIRD-PARTY SOFTWARE
@@ -38,9 +35,8 @@ licenses are compatible with the license above. We've included links so you
 can learn more if you want. 
 
 1. react: React is a JavaScript library for building user interfaces.
-5. wouter: wouter is a tiny router for modern React and Preact apps.
-6. HK Grotesk: The font we're using. 
-
+2. wouter: wouter is a tiny router for modern React and Preact apps.
+3. HK Grotesk: The font I'm using. 
 
 ******************************************************************************
 1. react
@@ -73,7 +69,7 @@ END, react
 ******************************************************************************
 
 ******************************************************************************
-5. wouter
+2. wouter
 URL: https://github.com/molefrog/wouter
      https://www.npmjs.com/package/wouter
 ******************************************************************************
@@ -86,9 +82,8 @@ github or npm pages as of April 11, 2021.
 END, wouter
 ******************************************************************************
 
-
 ******************************************************************************
-6. HK Grotesk
+3. HK Grotesk
 URL: https://hanken.co/products/hk-grotesk
 ******************************************************************************
 HK Grotesk was designed by Hanken Design Co. It is shared using a SIL OFL
